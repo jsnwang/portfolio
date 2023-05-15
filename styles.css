@@ -21,11 +21,6 @@ body {
 }
 
 /* Header styles */
-/* styles.css */
-
-/* ...Previous CSS code... */
-
-/* Header styles */
 header {
   background-color: #f2f2f2;
   padding: 20px 0;
@@ -65,10 +60,12 @@ section h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333;
 }
 
 section p {
   font-size: 18px;
+  color: #666;
 }
 
 section ul {
@@ -79,6 +76,7 @@ section ul {
 
 section ul li {
   margin-bottom: 10px;
+  color: #666;
 }
 
 /* Contact form styles */
