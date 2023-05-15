@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jason Wang - Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -14,43 +13,33 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="home">
-    <div class="container">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Hi, I'm Jason Wang, an Android Developer specializing in [your area of expertise]. I have [number] years of experience in building innovative and user-friendly Android applications.</p>
-    </div>
-  </section>
-
-  <section id="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <embed src="resume.pdf" width="100%" height="800px" type="application/pdf">
-      <p><a href="resume.pdf" download>Download</a></p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
+  <div class="container">
+    <section id="skills" class="skills-section">
       <h2>Skills</h2>
       <ul>
         <li>Android Development</li>
         <li>Java</li>
         <li>Kotlin</li>
+        <li>UI/UX Design</li>
         <!-- Add more skills -->
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="container">
+    <section id="home">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I am a dedicated and experienced Android Developer with a strong passion for creating innovative mobile applications. I have expertise in [specific technologies or frameworks].</p>
+      <a href="#contact" class="button">Get In Touch</a>
+    </section>
+
+
+    <section id="contact">
       <h2>Contact Me</h2>
       <form id="contact-form">
         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -59,9 +48,9 @@
         <textarea id="message" name="message" placeholder="Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-      <p>You can also reach me at jason</p>
-    </div>
-  </section>
+      <p>You can also reach me at email@example.com or by phone at 123-456-7890.</p>
+    </section>
+  </div>
 
   <footer>
     <div class="container">

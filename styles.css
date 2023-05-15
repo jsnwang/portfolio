@@ -20,6 +20,12 @@ body {
   padding: 20px;
 }
 
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Header styles */
 header {
   background-color: #f2f2f2;
@@ -77,6 +83,12 @@ section ul {
 section ul li {
   margin-bottom: 10px;
   color: #666;
+}
+
+.skills-section {
+  float: right;
+  width: calc(30% - 20px);
+  text-align: right;
 }
 
 /* Contact form styles */
