@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Jason Wang - Portfolio</title>
+  <!-- Add CSS and JavaScript files here -->
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
-  </header>
+  <div class="logo">Your Name</div>
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <main>
-    <section>
-      <h2>This is the main section of my website.</h2>
-      <p>This is some placeholder content that I will replace with my final content later.</p>
-    </section>
-    <section>
-      <h2>This is another section of my website.</h2>
-      <p>This is some placeholder content that I will replace with my final content later.</p>
-    </section>
-  </main>
-  <footer>
-    <p>Copyright &copy; My Website 2023</p>
-  </footer>
+</header>
+<section id="home">
+  <h1>Welcome to My Portfolio</h1>
+  <p>Hi, I'm Jason Wang, an Android Developer specializing in [your area of expertise]. I have [number] years of experience in building innovative and user-friendly Android applications.</p>
+</section>
+<section id="resume">
+  <h2>Resume</h2>
+  <embed src="./resume.pdf" width="100%" height="800px" type="application/pdf">
+</section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Android Development</li>
+    <li>Java</li>
+    <li>Kotlin</li>
+    <!-- Add more skills -->
+  </ul>
+</section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p>You can also reach me at email@example.com or by phone at 123-456-7890.</p>
+</section>
+
 </body>
 </html>
