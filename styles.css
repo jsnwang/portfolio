@@ -1,33 +1,106 @@
 /* styles.css */
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin: 0;
+}
+
+p {
+  color: #555;
+}
+
+/* Header Styling */
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #008
-  
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0088cc;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Form Styling */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #006699;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
