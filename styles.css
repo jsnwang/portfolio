@@ -1,10 +1,17 @@
 /* styles.css */
 
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
 }
 
 .container {
@@ -13,23 +20,19 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3 {
-  color: #333;
-  margin: 0;
-}
+/* Header styles */
+/* styles.css */
 
-p {
-  color: #555;
-}
+/* ...Previous CSS code... */
 
-/* Header Styling */
+/* Header styles */
 header {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: #333;
 }
@@ -47,21 +50,25 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #0088cc;
 }
 
-/* Section Styling */
+/* Section styles */
 section {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 section h2 {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
 }
 
 section ul {
@@ -74,7 +81,7 @@ section ul li {
   margin-bottom: 10px;
 }
 
-/* Contact Form Styling */
+/* Contact form styles */
 form input,
 form textarea {
   width: 100%;
@@ -97,10 +104,30 @@ form button:hover {
   background-color: #006699;
 }
 
-/* Footer Styling */
+/* Footer styles */
 footer {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   color: #777;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .container {
+    padding: 10px;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+  
+  section p {
+    font-size: 16px;
+  }
 }
