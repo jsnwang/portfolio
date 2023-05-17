@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #e0e7e7;
 }
 
 /* Global styles */
@@ -14,6 +13,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
+  background-color: #e0e7e7;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   position: relative;
+  background-color: #e0e7e7;
 }
 
 .container::after {
@@ -91,8 +92,9 @@ nav ul li a:hover {
   transition: 0.3s;
   margin-bottom: 20px;
   width: 70%;
-  padding: 5px;
-}
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#eeeeee;}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
