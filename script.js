@@ -57,3 +57,47 @@ function disableDarkMode() {
 
 // Check the user's preference from local storage or cookie and set the initial state of the toggle
 // ...
+
+// Add this script to your project and link it in the HTML file using <script src="script.js"></script>
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+  
+    // Get form values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+  
+    // Perform form validation here if needed
+  
+    // Create an object with the form data
+    var formData = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    };
+  
+    // Perform an AJAX request to submit the form data to the server
+    // You can customize this part based on your server-side implementation
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/submit-contact-form"); // Replace with your server endpoint
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        // Handle the successful form submission
+        alert("Message sent successfully!");
+        // Reset the form fields
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+      } else {
+        // Handle the form submission error
+        alert("An error occurred. Please try again later.");
+      }
+    };
+    xhr.send(JSON.stringify(formData));
+  });
+  
