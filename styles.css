@@ -122,6 +122,65 @@ footer {
   color: #777;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.container.dark-mode {
+  background-color: #333;
+}
+
+header.dark-mode {
+  background-color: #333;
+}
+
+.logo.dark-mode {
+  color: #fff;
+}
+
+nav ul li a.dark-mode {
+  color: #fff;
+}
+
+section.dark-mode {
+  background-color: #444;
+}
+
+section h2.dark-mode {
+  color: #fff;
+}
+
+section p.dark-mode {
+  color: #ccc;
+}
+
+.skills-section.dark-mode {
+  color: #fff;
+}
+
+form.dark-mode input,
+form.dark-mode textarea {
+  border-color: #666;
+  background-color: #333;
+  color: #fff;
+}
+
+form.dark-mode input[type="text"],
+form.dark-mode textarea {
+  color: #fff;
+}
+
+form.dark-mode button {
+  background-color: #00a6e9;
+}
+
+footer.dark-mode {
+  background-color: #333;
+  color: #aaa;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   /* Adjust styles for smaller screens */
