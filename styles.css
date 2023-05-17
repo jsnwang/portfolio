@@ -9,7 +9,8 @@
 
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'UbuntuRegular', Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.5;
   color: #333;
 }
@@ -18,6 +19,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
 }
 
 .container::after {
@@ -28,16 +30,41 @@ body {
 
 /* Header styles */
 header {
-  background-color: #f2f2f2;
   padding: 20px 0;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 100px;
   font-weight: bold;
   color: #333;
+  text-align: justify;
 }
 
+.github-link {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin-top: 50px;
+  margin-right: 15px;
+}
+
+.github-image {
+  width: 30px;
+  height: 30px;
+}
+
+.linkedin-link {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin-top: 90px;
+  margin-right: 15px;
+}
+
+.linkedin-image {
+  width: 30px;
+  height: 30px;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -91,9 +118,14 @@ section ul li {
   text-align: right;
 }
 
+.dark-mode-toggle {
+  float: right;
+}
+
 /* Contact form styles */
 form input,
 form textarea {
+  background-color: #ffffff;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -116,13 +148,18 @@ form button:hover {
 
 /* Footer styles */
 footer {
-  background-color: #f2f2f2;
   padding: 20px 0;
   text-align: center;
   color: #777;
 }
 
 /* Dark Mode Styles */
+*.dark-mode {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+}
 body.dark-mode {
   background-color: #222;
   color: #fff;
