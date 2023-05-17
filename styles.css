@@ -94,7 +94,8 @@ nav ul li a:hover {
   width: 70%;
   padding: 10px;
   border-radius: 10px;
-  background-color:#eeeeee;}
+  background-color:#eeeeee;
+  position: relative;}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -102,7 +103,16 @@ nav ul li a:hover {
 }
 
 .link {
-  font-size: 16px;
+  vertical-align: top;
+  align-self: flex-end;
+}
+
+.googleplay-image {
+  position: absolute; /* Add position:absolute to the Google Play image */
+  top: 10px; /* Adjust the top position value as needed */
+  right: 10px;
+  height: 30px;
+  width: 30px;
 }
 .company {
   font-size: 16px;
