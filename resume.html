@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Wang - Resume</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Wang</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">Jason Wang</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Back to Portfolio</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+    <h1 class="logo">Jason Wang</h1>
+    <a href="https://github.com/jsnwang" target="_blank" rel="noopener noreferrer" class="github-link">
+      <img class="github-image" src="images/github-mark.png" alt="GitHub"/>
+    </a>
+    <a href="https://linkedin.com/in/jsnwang" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+      <img class="linkedin-image" src="images/In-Blue-48.png" alt="LinkedIn"/>
+    </a>
+    <a href="./resume.html" class="resume-link">
+      <img class="resume-image" src="images/resume-7-512.png" alt="Resume"/>
+    </a>
+    
+    <p>Android Developer with 3 years of experience creating and enhancing mobile applications.</p>
+    <!-- TODO DARK MODE
+      <div class="dark-mode-toggle"> 
+      <input type="checkbox" id="darkModeToggle" />
+      <label for="darkModeToggle" class="toggle-label"></label>
+    </div> -->
+  </div>
 
   <section id="resume">
     <div class="container">
       <h2>Resume</h2>
       <embed src="resume.pdf" width="100%" height="800px" type="application/pdf">
-      <p><a href="resume.pdf" download>Download Resume</a></p>
+      <p><a href="resume.pdf" download>Download</a></p>
     </div>
   </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Jason Wang. All rights reserved.</p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
